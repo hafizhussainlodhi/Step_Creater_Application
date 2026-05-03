@@ -73,17 +73,17 @@ function Number({ count }) {
     <ul style={ulHandler}>
       <li style={{
         ...liStyle,
-        backgroundColor: count == 1 ? '#8789' : '#e5e7eb',
+        backgroundColor: count == 1 ? '#6366f1' : '#e5e7eb',
         color: count == 1 ? 'white' : 'black'
       }}>1</li>
       <li style={{
         ...liStyle,
-        backgroundColor: count == 2 ? '#8789' : '#e5e7eb',
+        backgroundColor: count == 2 ? '#6366f1' : '#e5e7eb',
         color: count == 2 ? 'white' : 'black'
       }}>2</li>
       <li style={{
         ...liStyle,
-        backgroundColor: count == 3 ? '#8789' : '#e5e7eb',
+        backgroundColor: count == 3 ? '#6366f1' : '#e5e7eb',
         color: count == 3 ? 'white' : 'black'
       }}>3</li>
     </ul>
@@ -127,7 +127,7 @@ function Button({ step, setStep, next, setNext }) {
     border: 'none',
     cursor: 'pointer',
     fontWeight: 'bold',
-    backgroundColor: '#8789',
+    backgroundColor: '#6366f1',
     color: 'white'
   }
 
