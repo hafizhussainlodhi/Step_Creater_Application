@@ -1,0 +1,104 @@
+/* --- Global & Background Animation --- */
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #f0f4f8, #e0e7ff, #f3e8ff, #fdf2f8);
+  background-size: 400% 400%;
+  animation: softGradient 15s ease infinite;
+}
+
+@keyframes softGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Card Style (Glassmorphism) --- */
+.card-style {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* --- Beautiful Heading --- */
+.heading-style {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+/* --- Number Stepper List --- */
+.number-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.number-item {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #e5e7eb;
+  color: black;
+}
+
+/* Active State for Numbers */
+.number-item.active {
+  background-color: #6366f1;
+  color: white;
+}
+
+/* --- Step Message --- */
+.step-message {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  min-height: 80px;
+  color: #4b5563;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* --- Button Controls --- */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.btn-style {
+  padding: 10px 25px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #6366f1;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.btn-style:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
